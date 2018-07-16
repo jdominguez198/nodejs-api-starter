@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-api-starter",
+  "version": "1.0.0",
+  "description": "API Starter with NodeJS & Express",
+  "main": "index.js",
+  "scripts": {
+    "start:prod": "NODE_ENV=prod node index.js",
+    "start:dev": "NODE_ENV=dev nodemon --harmony index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jdominguez198/nodejs-api-starter.git"
+  },
+  "author": "kodeline",
+  "license": "MIT",
+  "homepage": "https://github.com/jdominguez198/nodejs-api-starter",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "compression": "^1.6.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "helmet": "^3.6.1",
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "nodemon": "^1.11.0"
+  }
+}
