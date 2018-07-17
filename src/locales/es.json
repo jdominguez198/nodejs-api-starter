@@ -1,0 +1,7 @@
+{
+    "SERVER_STARTED": "Servidor inicializado",
+    "NOT_FOUND": "No encontrado",
+    "CODE_NOT_FOUND": "Código no encontrado",
+    "FORBIDDEN": "Acceso denegado",
+    "ROUTE_NOT_FOUND": "Ruta no encontrada"
+}

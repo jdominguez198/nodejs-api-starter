@@ -30,7 +30,25 @@ app.use(helmet());
 const bodyParser = require('body-parser');
 app.use(bodyParser.text());
 
-// Routes
+app.locale = require(global.config.path.locales + "locale");
+app.use("/v1/", app.locale.setLanguage);
+
+// Documentation routes
+app.use("/doc", express.static(global.config.path.docs));
+
+// Public routes
+app.use("/", express.static(global.config.path.static));
+
+// App routes
 app.use('/', require(global.config.path.routes));
+
+// 404
+app.use(require(global.config.path.utils + "404"));
+
+// Response handling
+app.use(require(global.config.path.utils + "response"));
+
+// Error handling
+app.use(require(global.config.path.utils + "error"));
 
 module.exports = app;
