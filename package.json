@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "API Starter with NodeJS & Express",
   "main": "index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "scripts": {
     "start:prod": "NODE_ENV=prod node index.js",
     "start:dev": "NODE_ENV=dev nodemon --harmony index.js",
@@ -26,6 +29,7 @@
   },
   "devDependencies": {
     "eslint": "^3.19.0",
+    "eslint-plugin-node": "^7.0.1",
     "nodemon": "^1.11.0"
   }
 }
